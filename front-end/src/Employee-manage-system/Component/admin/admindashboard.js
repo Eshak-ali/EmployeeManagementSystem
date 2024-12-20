@@ -105,6 +105,7 @@ const Admindashboard = () => {
                         data-bs-toggle="modal"
                         data-bs-target="#staticBackdrop1"
                         onClick={() => setTemp(person)}
+                        disabled={person}
                     >
                         Update-admin
                     </button>
