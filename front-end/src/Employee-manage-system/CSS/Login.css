@@ -1,0 +1,123 @@
+.eye-btn {
+    border: none;
+    background-color: transparent;
+}
+
+input[type='radio'] {
+    cursor: pointer;
+}
+
+.main-login {
+    color: white;
+    height: 100vh;
+    background-image: url('../images/back.jpg');
+    background-size: cover;
+    background-blend-mode: color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(40, 21, 166, 0.3);
+}
+
+
+.login-box {
+    height: 80vh;
+    padding: 10px;
+    background-color: rgba(60, 4, 95, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgb(37, 1, 37);
+    backdrop-filter: blur(20px);
+}
+
+.login-form {
+    text-align: start;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.user-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20PX;
+}
+
+.user-login img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.form-name {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-name input {
+    color: black;
+    width: 40vw;
+    height: 5vh;
+    border-radius: 10px;
+    box-shadow: inset 0px 4px 5px black;
+}
+
+.p-inpt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.user-chk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.user-chk span {
+    font-size: 24px;
+}
+
+.btn-orange {
+    background-color: rgba(60, 4, 95, 0.6) !important;
+    width: 150px;
+    height: 50px;
+    transition: all 0.2s linear !important;
+    box-shadow: inset 0px 5px 10px black;
+
+}
+
+.btn-orange:hover {
+    background: linear-gradient(to bottom, rgb(34, 0, 34), rgb(44, 18, 56), rgb(113, 5, 113));
+    border-radius: 20px;
+    width: 170px;
+    height: 50px;
+}
+
+
+
+@media (max-width:380px) {
+    .form-name {
+        font-size: 14px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

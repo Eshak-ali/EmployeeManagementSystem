@@ -1,0 +1,158 @@
+
+.user-details {
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.Navbar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1055;
+}
+
+/* .pages-top{
+    padding-top: 90px !important;
+} */
+.user-box {
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 1px black;
+    background-color:rgb(58, 90, 116) !important;
+}
+
+.user-box img {
+    margin: 0px auto;
+    width: 20vw;
+}
+
+.user-name {
+    font-size: 20px;
+    color: lightsteelblue;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.user-name p {
+    text-align: start;
+}
+
+.user-name p span {
+    color: darkorange;
+}
+
+.emp-Details {
+    text-align: start;
+    color: rgb(29, 5, 29) !important;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.emp-Details h3 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(29, 5, 29);
+    font-weight: bold;
+}
+
+.user-total {
+    background-image: url('../images/totalcash.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 50%);
+    background-blend-mode: color;
+    border: 2px solid green;
+    border-radius: 2px;
+    padding: 10px;
+    color: white;
+}
+
+.cash-input {
+    color: black;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cash-input input {
+    width: 100%;
+}
+
+.user-cash {
+    background-image: url('../images/cashinhand.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 50%);
+    background-blend-mode: color;
+    border: 2px solid green;
+    border-radius: 2px;
+    padding: 10px;
+    color: white;
+}
+
+.user-short {
+    background-image: url('../images/short.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 50%);
+    background-blend-mode: color;
+    border: 2px solid green;
+    border-radius: 2px;
+    padding: 10px;
+    color: white;
+}
+
+.user-dashboard {
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.days-cart{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+
+.days-count{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    gap: 10px;
+    background-color: rgb(50, 49, 50);
+    height: 70px;
+}
+
+
+.days-count p{
+    margin-bottom: 0px !important;
+}
+
+.days-count img{
+    width: 45%;
+    height: 100%;
+}
+
+
+
+
+
+
+

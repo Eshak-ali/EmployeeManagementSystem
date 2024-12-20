@@ -1,0 +1,14 @@
+.quotes{
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(160, 4, 160);
+}
+
+.rating-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.table-body{
+    height: 120vh !important;
+}

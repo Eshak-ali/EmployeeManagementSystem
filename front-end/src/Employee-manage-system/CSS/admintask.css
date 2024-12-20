@@ -1,0 +1,79 @@
+.empl-table{
+  height: 80vh;
+  margin-left: 80px;
+  background-color: rgb(21, 63, 31);
+  padding: 20px;
+    box-shadow:inset 1px 5px 10px  black;
+}
+
+.bg{
+    background-color: green;
+    border-radius: 20px;
+    box-shadow: inset 0px 4px 10px black;
+    border-radius: 10px;
+}
+
+.task-box{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    background-color:rgb(21, 63, 31);
+}
+
+.form{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.form-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+.task-main-view{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.emp-list{
+    height: 60vh;
+    overflow-y: scroll;
+}
+.main{
+    background-color: rgb(55, 87, 55);
+    color: black;
+    padding: 30px;
+    height: 80vh;
+    border-radius: 20px;
+    box-shadow:inset 0px 2px 5px black;
+}
+
+.emp-task{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.task-content{
+    background-color: white ;
+    height: 60vh;
+    border-radius: 10px;
+}
+.profile-task{
+    background-color:rgb(21, 63, 31);
+    color: white;
+    border-radius: 9px 9px 0px 0px;
+    padding: 10px;
+}
+
+.task-table{
+    height: 40vh;
+}

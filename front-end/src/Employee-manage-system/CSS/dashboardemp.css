@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar {
+    height: 2vh;
+    background-color: rgb(34, 0, 34);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.side-bar {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.side-bar-menu {
+    background-color: rgb(34, 0, 34) !important;
+}
+
+.side-bar-btn {
+    margin-left: 20px;
+}
+
+.brand {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: lightsteelblue;
+}
+
+.brand span {
+    color: darkorange;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+h5>span {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-brand {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.user-logout {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px !important;
+    gap: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.profile-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px 1px black;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    font-size: 18px !important;
+    padding: 5px;
+    box-shadow: inset 0px 4px 10px black;
+    border-radius: 10px;
+}
+
+.nav-item:hover {
+    font-weight: bold;
+    color: lightsteelblue;
+    margin-left: 20px;
+}
+
+.profile-name p {
+    margin-top: 10px;
+}
+
+.profile-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.update {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.employee-list li {
+    padding: 30px;
+    border-bottom: 1px solid white;
+}
+
+.update-box {
+    text-align: start !important;
+    color: black !important;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+}
+
+.update-box input {
+    width: 100%;
+}
+
+.update-box input::-webkit-file-upload-button {
+    border-radius: 15px;
+    background-color: lightgreen;
+    margin-bottom: 10px;
+}
+
+.bar-icon {
+    animation: icon 3s infinite;
+}
+
+@keyframes icon {
+    0% {
+        transform: scale(1);
+        color: white;
+    }
+
+    50% {
+        transform: scale(1.2);
+        color: steelblue;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

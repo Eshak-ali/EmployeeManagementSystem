@@ -1,0 +1,176 @@
+.main-admin{
+    height: 100vh;
+    color: black;
+}
+.admin-sidebar{
+    height: 100vh;
+    border-right: 1px solid black;
+    /* background: linear-gradient(to bottom,rgb(56, 1, 56),rgb(44, 18, 56),rgb(113, 5, 113)); */
+    background-color: rgb(56, 1, 56);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    box-shadow:inset 0px 10px 20px  black;
+}
+
+
+
+.admin-details{
+    color:white;
+}
+
+.admin-details img{
+    width: 6vw;
+    height: 8vh;
+}
+.list{
+    color:rgb(241, 130, 241) !important;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+    box-shadow: inset 0px 5px 10px black;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: rgb(68, 6, 68);
+}
+
+
+
+.list>li{
+    transition: all 0.3s linear;
+    
+}
+.list>li:hover{
+    font-weight: bold;
+    color: white;
+}
+
+.dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.dashboard h4{
+    cursor: pointer;
+}
+
+.emp-register{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.emp-cart{
+    width: 290px;
+    box-shadow:inset 5px 5px 20px 2px black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* cart back ground color */
+.green{
+    background-color: darkgreen;
+}
+.red{
+    background-color: darkred;
+}
+.blue{
+    background-color: darkblue;
+}
+/*  */
+
+.newemp-cart{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.newemp-box{
+    height: 39vh;
+    border-radius: 10px;
+    background-color: rgb(214, 174, 254);
+    color:white;
+    box-shadow: inset 2px 2px 10px black;
+}
+
+.newemp-box>span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+    background-color: hwb(270 2% 60%) ;
+    border-radius: 2px 2px 0px 0px;
+}
+
+.newemp-box span h5{
+    cursor: pointer;
+}
+.newemp-box span p{
+    cursor: pointer;
+}
+
+.emp-table{
+    overflow-y: scroll;
+    border-radius: 0px 0px 2px 2px;
+    scroll-behavior: smooth;
+}
+
+
+.profile-emp span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   gap: 10px;
+}
+
+
+
+td p{
+    margin-top: 10px;
+}
+.profile-emp  img{
+    width: 35px ;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.absolute{
+    color: black;
+    position: absolute;
+    top: 360px;
+    right: 0px;
+}
+
+.absolute1{
+    color: black;
+    position: absolute;
+    top: 360px;
+    left: 51%;
+}
+
+
+.card ul{
+    margin-bottom: 0px;
+}
+.card h5{
+    border-bottom: 2px solid;
+}
+
+.card p{
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+

@@ -1,0 +1,92 @@
+.main-leave {
+    min-height: 93vh;
+    background-color:lightskyblue;
+    margin: 0px 30px;
+    border-radius: 10px;
+    box-shadow: inset 1px 2px 5px #000000;
+    z-index: 1045 !important;
+}
+
+.leave-card {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    transition: all 1s linear;
+}
+
+
+
+.leave-cart {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 350px;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    transition: all 0.6s linear;
+}
+
+.leave-cart:hover{
+    width: 250px;
+    height: 350px;
+}
+
+.leave-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px 1px blueviolet;
+    transition: all 0.2s linear;
+}
+
+.leave-card img:hover {
+    width: 90px;
+    height: 90px;
+    box-shadow: 2px 2px 3px 2px darkblue;
+}
+
+.leave-position {
+    margin-left: 20px;
+    font-size: 14px;
+    color: rgb(255, 0, 0);
+}
+
+.leave-position>span{
+    color: red;
+}
+
+.leave-profile {
+    height: 10vh;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hwb(199 2% 60%);
+    border-radius: 15px 15px 0px 0px;
+}
+
+.leave-detail {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.leave-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media screen and (max-width:450px){
+    .main-leave{
+        min-height: 76vh;
+    }
+}

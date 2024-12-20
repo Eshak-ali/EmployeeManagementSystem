@@ -1,0 +1,14 @@
+.main-performance{
+    height:90vh;
+  
+}
+
+.performance-table{
+    height: 40vh;
+}
+
+.emp-img img{
+    width: 10vw;
+    height: 15vh;
+    border-radius: 15px;
+}
