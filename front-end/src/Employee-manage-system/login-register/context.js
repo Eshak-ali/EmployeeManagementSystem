@@ -67,7 +67,7 @@ const Context = ({ children }) => {
         if (check === "employee") {
             try {
                 const res = await axios.post(
-                    "http://localhost:4000/employee/dashboard",
+                    `${process.env.REACT_APP_API}/employee/dashboard`,
                     employee
                 );
                 if (res.data) {
@@ -87,7 +87,7 @@ const Context = ({ children }) => {
         } else {
             try {
                 const res = await axios.post(
-                    "http://localhost:4000/admin/dashboard",
+                    `${process.env.REACT_APP_API}/admin/dashboard`,
                     employee
                 );
                 if (res.data) {

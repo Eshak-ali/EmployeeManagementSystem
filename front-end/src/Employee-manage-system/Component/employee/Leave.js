@@ -22,7 +22,7 @@ const Leave = () => {
     const handleLeave = async () => {
 
       if(reason !==''){
-        const res = await axios.post("http://localhost:3000/employee/leave", person)
+        const res = await axios.post(`${process.env.REACT_APP_API}/employee/leave`, person)
         const num = msg.leave + 1;
         if (res.data) {
             setMsg({
@@ -56,7 +56,7 @@ const Leave = () => {
         <div className='leave-main col-12'>
             <h2 className=' d-flex mx-3  text-dark'> Leave Request</h2>
             {person.position === '' && 'reject' ?
-                <p>you didnt Assigned for any position</p>
+                <p style={{color:'black'}}>You didnt Assigned for any position</p>
                 :
                 
                     <>

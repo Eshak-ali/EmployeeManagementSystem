@@ -51,7 +51,7 @@ const Dashboard = () => {
     }, []);
 
     const admindata = async () => {
-        const res = await axios.get("http://localhost:4000/admin/all");
+        const res = await axios.get(`${process.env.REACT_APP_API}/admin/all`);
         if (res.data) {
             setAdmin(res.data);
             console.log(admin);
@@ -78,7 +78,7 @@ const Dashboard = () => {
     const updatecash = async () => {
         try {
             const res = await axios.post(
-                "http://localhost:4000/employee/cashier",
+                `${process.env.REACT_APP_API}/employee/cashier`,
                 person
             );
             if (res.data) {
@@ -103,7 +103,7 @@ const Dashboard = () => {
                     <div className="col-3 user-box d-none d-md-flex ">
                         <img
                             className="h-50 rounded"
-                            src={`http://localhost:4000/uploads/${person.image}`}
+                            src={`${process.env.REACT_APP_API}/uploads/${person.image}`}
                             alt="user.name"
                         />
                         <div>

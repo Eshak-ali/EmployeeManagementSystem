@@ -45,13 +45,13 @@ const Navbar = () => {
     formData.append("phone", temp?.phone || "");
     formData.append("email", temp?.email || "");
     formData.append("employeeid", temp?.employeeid || "");
-    formData.append("image", temp?.image || "");
+    formData.append("image", temp?.image || person.image);
     formData.append("position", temp?.position || "");
 
     if (check === "employee") {
       try {
         const res = await axios.post(
-          "http://localhost:4000/employee/update",
+          `${process.env.REACT_APP_API}/employee/update`,
           formData,
           {
             headers: {
@@ -70,7 +70,7 @@ const Navbar = () => {
     } else {
       try {
         const res = await axios.post(
-          "http://localhost:4000/admin/update",
+          `${process.env.REACT_APP_API}/admin/update`,
           formData,
           {
             headers: {
@@ -92,7 +92,7 @@ const Navbar = () => {
     if (person.position === "reject") {
       try {
         const res = await axios.post(
-          `http://localhost:4000/employee/delete/${person._id}`
+          `${process.env.REACT_APP_API}/employee/delete/${person._id}`
         );
         if (res.data) {
           alert("Data cleared");
@@ -185,7 +185,7 @@ const Navbar = () => {
                   <img
                     className="profile-img"
                     src={
-                      `http://localhost:4000/uploads/${person.image}` || user
+                      `${process.env.REACT_APP_API}/uploads/${person.image}` || user
                     }
                     alt="name"
                   />
@@ -236,7 +236,7 @@ const Navbar = () => {
               <li className="nav-item profile-name" data-bs-dismiss="offcanvas">
                 <img
                   className="profile-img"
-                  src={`http://localhost:4000/uploads/${person.image}`}
+                  src={`${process.env.REACT_APP_API}/uploads/${person.image}`}
                   alt="name"
                 />
                 <p>{person.name}</p>

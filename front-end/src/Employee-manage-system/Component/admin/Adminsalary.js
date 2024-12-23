@@ -13,7 +13,7 @@ const Adminsalary = () => {
     }, []);
 
     const empfetch = async () => {
-        const res = await axios.get("http://localhost:4000/employee/all");
+        const res = await axios.get(`${process.env.REACT_APP_API}/employee/all`);
         if (res.data) {
             setEmplDetails(res.data);
         } else {
@@ -36,7 +36,7 @@ const Adminsalary = () => {
                 <div className="profile-emp d-flex ">
                     <span>
                         <img
-                            src={`http://localhost:4000/uploads/${row.image}`}
+                            src={`${process.env.REACT_APP_API}/uploads/${row.image}`}
                             alt="name"
                         />
                     </span>

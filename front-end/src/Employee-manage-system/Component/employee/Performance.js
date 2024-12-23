@@ -14,7 +14,7 @@ const Performance = () => {
 
     const fetch = async () => {
         try {
-            const response = await axios.get("http://localhost:3000/employee/all");
+            const response = await axios.get(`${process.env.REACT_APP_API}/employee/all`);
             if (response.data) {
                 setTemp(response.data);
 
@@ -40,7 +40,7 @@ const Performance = () => {
     return (
         <div className='main-performance col-12 '>
             <h2 className='col-2 mx-2 text-dark '>Performance</h2>
-            {person?.position === "" && "reject" ? <p>You didnt Assigned for any position</p>
+            {person?.position === "" && "reject" ? <p style={{color:'black'}}>You didnt Assigned for any position</p>
                 :
                 <div className='table-responsive m-auto col-10 '>
                     <table className='table table-success col-10'>
@@ -56,7 +56,7 @@ const Performance = () => {
                         </thead>
                         <tbody>
                             <tr>
-                                <td className='emp-img'><img src={`http://localhost:3000/uploads/${person.image}`} /></td>
+                                <td className='emp-img'><img src={`${process.env.REACT_APP_API}/uploads/${person.image}`} /></td>
                                 <td>{person.name}</td>
                                 <td>{person.employeeid}</td>
                                 <td>{person.position}</td>
@@ -100,7 +100,7 @@ const Performance = () => {
                             {emp.filter((each) => ((each.name.toLowerCase()).includes(search.toLowerCase()))).map((each) => (
                                 <tr key={each._id}>
                                     <td className='emp-img'>
-                                        <img src={`http://localhost:3000/uploads/${each.image}`} /></td>
+                                        <img src={`${process.env.REACT_APP_API}/uploads/${each.image}`} /></td>
                                     <td >{each.name}</td>
                                     <td>{each.employeeid}</td>
                                     <td>{each?.position}</td>

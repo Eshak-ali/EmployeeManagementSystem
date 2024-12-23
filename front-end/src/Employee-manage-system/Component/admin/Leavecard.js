@@ -12,7 +12,7 @@ const Leavecard = () => {
                     <section className="leave-cart">
                         <div className="leave-profile">
                             <img
-                                src={`http://localhost:4000/uploads/${each.image}`}
+                                src={`${process.env.REACT_APP_API}/uploads/${each.image}`}
                                 alt="employee"
                             />
                         </div>

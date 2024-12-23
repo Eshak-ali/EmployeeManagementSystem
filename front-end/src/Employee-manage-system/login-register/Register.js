@@ -40,7 +40,7 @@ const Register = () => {
 
         try {
             const response = await axios.post(
-                "http://localhost:4000/employee",
+                `${process.env.REACT_APP_API}/employee`,
                 formData,
                 {
                     headers: {

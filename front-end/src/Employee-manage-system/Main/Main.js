@@ -61,7 +61,7 @@ const Main = () => {
               <Route path='completed' element={<Taskcomplete />} />
             </Route>
             <Route path='performance' element={<Performance />} />
-          </Route>
+          </Route> 
 
           <Route path={path === 'admin' ? '/' : '/admin'} element={<Authentication><AdminNavbar /></Authentication>} >
             <Route index element={<Admindashboard />} />
