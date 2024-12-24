@@ -9,7 +9,7 @@ const admin = require("./Routes/admin");
 const app = express();
 app.use(
   cors({
-    origin: process.env.APPLICATION_URL, // Adjust as needed
+    origin: process.env.APPLICATION_URL,
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
