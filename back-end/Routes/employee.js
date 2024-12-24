@@ -46,7 +46,7 @@ router.post("/", uploads.single("image"), async (req, res) => {
       email: email,
       employeeid: employeeid,
       position: position,
-      image: req.file.filename,
+      image: req?.file?.filename || 'image',
       leave,
       days,
       Rating: Rating,
