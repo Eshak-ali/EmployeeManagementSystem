@@ -9,13 +9,13 @@ const admin = require("./Routes/admin");
 const app = express();
 app.use(
   cors({
-    origin: `${process.env.Application_URL}`, // Adjust as needed
+    origin: process.env.APPLICATION_URL, // Adjust as needed
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
 app.use(express.json());
 try {
-  mongoose.connect(process.env.Mongodb_URL);
+  mongoose.connect(process.env.MONGODB_URL);
   console.log("connected successfully");
 } catch (error) {
   console.log(error.message);
