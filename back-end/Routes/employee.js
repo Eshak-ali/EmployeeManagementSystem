@@ -4,11 +4,10 @@ const path = require("path");
 const router = express.Router();
 const { Employee, Taskfield } = require("../Models/userSchema");
 const { error } = require("console");
-const { isValidObjectId } = require("mongoose");
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb("/tmp", "uploads/");
+    cb(null, "uploads/" || "/tmp");
   },
   filename: (req, file, cb) => {
     cb(null, Date.now() + path.extname(file.originalname));
