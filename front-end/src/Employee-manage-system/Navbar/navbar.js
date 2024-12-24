@@ -382,7 +382,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="p-3">
+      <div className="mx-auto">
         {check !== "employee" ? "" : <Outlet />}
       </div>
     </div>
