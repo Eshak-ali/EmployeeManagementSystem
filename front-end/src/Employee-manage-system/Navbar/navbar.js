@@ -236,7 +236,7 @@ const Navbar = () => {
               <li className="nav-item profile-name" data-bs-dismiss="offcanvas">
                 <img
                   className="profile-img"
-                  src={`${process.env.REACT_APP_API}/uploads/${person.image}`}
+                  src={`${process.env.REACT_APP_API}/uploads/${person.image}` || user }
                   alt="name"
                 />
                 <p>{person.name}</p>
