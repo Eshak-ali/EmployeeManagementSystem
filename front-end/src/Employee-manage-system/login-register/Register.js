@@ -11,12 +11,7 @@ const Register = () => {
 
     const handlechange = (e) => {
         const { name, value } = e.target;
-        setEmployee((prev) => ({ ...prev, [name]: value.trim() }));
-    };
-
-    const handleimage = (e) => {
-        setEmployee((prev) => ({ ...prev, image: e.target.files[0] }));
-
+        setEmployee((prev) => ({ ...prev, [name]: value.trim(" ") }));
         let b = "";
         for (let i = 0; i < 8; i++) {
             const a = Math.floor(Math.random() * 9);
@@ -24,6 +19,12 @@ const Register = () => {
         }
         setEmployee((prev) => ({ ...prev, employeeid: b }));
         setEmployee((prev) => ({ ...prev, position: "" }));
+    };
+
+    const handleimage = (e) => {
+        setEmployee((prev) => ({ ...prev, image: e.target.files[0] }));
+
+      
     };
 
     const handlesubmit = async (event) => {
