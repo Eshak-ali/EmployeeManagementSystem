@@ -22,7 +22,7 @@ const AdminNavbar = () => {
 
   return (
     <div>
-      <div className="main-admin row col-12  bg-secondary gx-0 p-2 p-md-0">
+      <div className="main-admin row col-12  bg-secondary gx-0 ">
         <div className="col-12  p-0 d-md-none ">
           <Navbar />
         </div>

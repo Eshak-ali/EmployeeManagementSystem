@@ -125,7 +125,7 @@ const Adminsalary = () => {
     };
 
     return (
-        <div className=" mx-md-5 col-10 col-xl-12 p-2 p-md-0">
+        <div className=" mx-md-5 col-10 col-xl-12 ">
             <h2 className="mx-5 pt-3 text-md-light">
                 Employees Salary Package
             </h2>

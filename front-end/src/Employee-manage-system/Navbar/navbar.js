@@ -185,7 +185,8 @@ const Navbar = () => {
                   <img
                     className="profile-img"
                     src={
-                      `${process.env.REACT_APP_API}/uploads/${person.image}` || user
+                      `${process.env.REACT_APP_API}/uploads/${person.image}` ||
+                      user
                     }
                     alt="name"
                   />
@@ -236,7 +237,10 @@ const Navbar = () => {
               <li className="nav-item profile-name" data-bs-dismiss="offcanvas">
                 <img
                   className="profile-img"
-                  src={`${process.env.REACT_APP_API}/uploads/${person.image}` || user }
+                  src={
+                    `${process.env.REACT_APP_API}/uploads/${person.image}` ||
+                    user
+                  }
                   alt="name"
                 />
                 <p>{person.name}</p>
@@ -378,7 +382,9 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div>{check !== "employee" ? "" : <Outlet />}</div>
+      <div className="container container-md-fluid">
+        {check !== "employee" ? "" : <Outlet />}
+      </div>
     </div>
   );
 };
