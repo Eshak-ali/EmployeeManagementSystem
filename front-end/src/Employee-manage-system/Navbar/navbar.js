@@ -247,7 +247,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item" data-bs-dismiss="offcanvas">
-                <Link className="nav-link" to="employeedetails">
+                <Link className="nav-link" to="employeeDetail">
                   Employees
                 </Link>
               </li>
