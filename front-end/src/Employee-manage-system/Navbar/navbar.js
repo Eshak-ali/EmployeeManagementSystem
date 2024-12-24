@@ -247,7 +247,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item" data-bs-dismiss="offcanvas">
-                <Link className="nav-link" to="employee">
+                <Link className="nav-link" to="employeedetails">
                   Employees
                 </Link>
               </li>
@@ -377,7 +377,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div>{check !== "employee" ? "" : <Outlet />}</div>
+      <div className="p-3 p-md-0">{check !== "employee" ? "" : <Outlet />}</div>
     </div>
   );
 };
