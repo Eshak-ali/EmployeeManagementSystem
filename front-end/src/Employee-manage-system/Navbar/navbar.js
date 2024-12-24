@@ -377,7 +377,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="p-3 p-md-0">{check !== "employee" ? "" : <Outlet />}</div>
+      <div>{check !== "employee" ? "" : <Outlet />}</div>
     </div>
   );
 };
