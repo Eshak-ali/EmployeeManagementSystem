@@ -242,7 +242,7 @@ const Navbar = () => {
                 <p>{person.name}</p>
               </li>
               <li className="nav-item" data-bs-dismiss="offcanvas">
-                <Link className="nav-link" to="/admin">
+                <Link className="nav-link" to="/">
                   Dashboard
                 </Link>
               </li>
