@@ -7,8 +7,13 @@ const employee = require("./Routes/employee");
 const admin = require("./Routes/admin");
 
 const app = express();
+app.use(
+  cors({
+    origin: `${process.env.Application_URL}`, // Adjust as needed
+    methods: ["GET", "POST", "PUT", "DELETE"],
+  })
+);
 app.use(express.json());
-app.use(cors());
 try {
   mongoose.connect(process.env.Mongodb_URL);
   console.log("connected successfully");
