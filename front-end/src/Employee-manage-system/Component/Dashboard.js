@@ -151,7 +151,7 @@ const Dashboard = () => {
                             Sorry Your rejected !
                         </h1>
                     ) : (
-                        <div className="emp-Details col-12 col-md-8">
+                        <div className="emp-Details p-5 p-md-0 col-12 col-md-8">
                             <h2>
                                 Welcome back,<br></br> {person.name}!
                             </h2>
