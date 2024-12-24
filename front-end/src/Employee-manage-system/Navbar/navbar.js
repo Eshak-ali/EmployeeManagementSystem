@@ -352,6 +352,7 @@ const Navbar = () => {
                       className="file-input"
                       accept="image/*"
                       onChange={handleImage}
+                      disabled
                     />
                   </form>
                 </div>

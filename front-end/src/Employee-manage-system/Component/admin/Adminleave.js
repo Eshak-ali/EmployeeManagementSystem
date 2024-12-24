@@ -64,7 +64,7 @@ const Adminleave = () => {
   };
 
   return (
-    <div className="main-leave col-10 col-xl-12">
+    <div className="main-leave col-10 col-xl-12 p-2">
       <h2 className="mx-5 pt-3">Leave Request</h2>
       <div>
         <Outlet

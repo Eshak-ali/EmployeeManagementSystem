@@ -96,7 +96,7 @@ const Admindashboard = () => {
   return (
     <div>
       <div>
-        <div className="dashboard">
+        <div className="dashboard p-3">
           <h4 className=" mx-md-5" onClick={empfetch}>
             Dashboard <BsBootstrapReboot />
           </h4>

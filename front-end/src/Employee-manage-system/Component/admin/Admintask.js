@@ -173,7 +173,7 @@ const Admintask = () => {
   };
 
   return (
-    <div className="col-12 ">
+    <div className="col-12 p-2">
       <div className=" d-flex align-item-center justify-content-around mt-2">
         <p id="as">
           <Link to="/task">
