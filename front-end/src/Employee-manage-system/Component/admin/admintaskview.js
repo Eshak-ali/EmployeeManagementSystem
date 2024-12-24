@@ -14,7 +14,7 @@ const Admintaskview = () => {
 
   return (
     <div>
-      <div className="empl-table d-none d-xl-block table-responsive mt-3 p-2">
+      <div className="empl-table d-none d-xl-block table-responsive mt-3 p-2 p-md-0">
         <DataTable
           columns={context.columns}
           data={context.empltask}

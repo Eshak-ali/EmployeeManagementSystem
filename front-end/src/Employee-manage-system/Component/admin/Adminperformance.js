@@ -212,7 +212,7 @@ const Adminperformance = () => {
     };
 
     return (
-        <div className="col-12 p-2">
+        <div className="col-12 p-2 p-md-0">
             <h2 className="mx-3">
                 Performance{" "}
                 <div className="mt-4 text-end">

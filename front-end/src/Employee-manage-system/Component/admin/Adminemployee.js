@@ -246,7 +246,7 @@ const Adminemployee = ({ setOption }) => {
     }
   };
   return (
-    <div className="col-12 main-adminemp text-dark p-2">
+    <div className="col-12 main-adminemp text-dark p-2 p-md-0">
       <h2 className="mx-3">Employee Details</h2>
       <ul className="empposition mx-5">
         <li className="nav-item" id="new-emp">

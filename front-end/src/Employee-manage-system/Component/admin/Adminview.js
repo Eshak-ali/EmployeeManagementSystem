@@ -138,7 +138,7 @@ const Adminview = () => {
   };
 
   return (
-    <div className="main  my-md-2 mx-4 mx-md-5 col-10 col-xl-12 p-2">
+    <div className="main  my-md-2 mx-4 mx-md-5 col-10 col-xl-12 p-2 p-md-0">
       <div className="task-main-view">
         <label></label>
         <div class="dropdown">
