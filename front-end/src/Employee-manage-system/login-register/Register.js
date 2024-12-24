@@ -11,7 +11,7 @@ const Register = () => {
 
     const handlechange = (e) => {
         const { name, value } = e.target;
-        setEmployee((prev) => ({ ...prev, [name]: value }));
+        setEmployee((prev) => ({ ...prev, [name]: value.trim() }));
     };
 
     const handleimage = (e) => {
