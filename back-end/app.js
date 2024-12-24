@@ -5,14 +5,12 @@ const cors = require("cors");
 require("dotenv").config();
 const employee = require("./Routes/employee");
 const admin = require("./Routes/admin");
-
+const corsoption={
+  origin: process.env.APPLICATION_URL,
+  methods: ["GET", "POST", "PUT", "DELETE"],
+}
 const app = express();
-app.use(
-  cors({
-    origin: process.env.APPLICATION_URL,
-    methods: ["GET", "POST", "PUT", "DELETE"],
-  })
-);
+app.use(cors(corsoption));
 app.use(express.json());
 try {
   mongoose.connect(process.env.MONGODB_URL);
