@@ -33,9 +33,9 @@ router.post("/", uploads.single("image"), async (req, res) => {
     salary,
     cashier,
   } = req.body;
-  if (!req.file) {
-    return res.status(400).json({ message: "no file uploaded" });
-  }
+  // if (!req.file) {
+  //   return res.status(400).json({ message: "no file uploaded" });
+  // }
 
   try {
     const empdetails = new Employee({
