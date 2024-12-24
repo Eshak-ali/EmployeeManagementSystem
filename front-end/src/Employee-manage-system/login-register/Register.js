@@ -127,6 +127,7 @@ const Register = () => {
                             type="file"
                             accept="image/*"
                             onChange={handleimage}
+                            required
                         />
                     </div>
                     <button type="submit" className="btn text-light btn-orange">
