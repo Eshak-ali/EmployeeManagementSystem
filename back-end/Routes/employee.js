@@ -6,18 +6,18 @@ const { Employee, Taskfield } = require("../Models/userSchema");
 const { error } = require("console");
 // const { storage } = require("../Cloudinary/Cloudinary");
 
-// const storage = multer.diskStorage({
-//   destination: (req, file, cb) => {
-//     cb(null, "tmp/");
-//   },
-//   filename: (req, file, cb) => {
-//     cb(null, Date.now() + path.extname(file.originalname));
-//   },
-// });
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, "tmp/");
+  },
+  filename: (req, file, cb) => {
+    cb(null, Date.now() + path.extname(file.originalname));
+  },
+});
 
-// const uploads = multer({ storage });
+const uploads = multer({ storage });
 
-router.post("/", async (req, res) => {
+router.post("/", uploads.single("image"), async (req, res) => {
   const {
     name,
     password,
