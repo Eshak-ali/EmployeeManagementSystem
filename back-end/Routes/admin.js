@@ -4,14 +4,14 @@ const router = express.Router();
 const multer = require("multer");
 const path = require("path");
 
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        cb(null, "uploads/" || "/tmp");
-    },
-    filename: (req, file, cb) => {
-        cb(null, Date.now() + path.extname(file.originalname));
-    },
-});
+// const storage = multer.diskStorage({
+//     destination: (req, file, cb) => {
+//         cb(null, "uploads/" || "/tmp");
+//     },
+//     filename: (req, file, cb) => {
+//         cb(null, Date.now() + path.extname(file.originalname));
+//     },
+// });
 
 router.post("/set_admin", async (req, res) => {
     try {
@@ -40,7 +40,7 @@ router.get("/all", async (req, res) => {
     res.send(allemployee);
 });
 
-const uploads = multer({ storage });
+// const uploads = multer({ storage });
 router.post("/login", async (req, res) => {
     const { name, password } = req.body;
     try {
