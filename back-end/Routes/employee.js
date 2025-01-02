@@ -4,7 +4,7 @@ const path = require("path");
 const router = express.Router();
 const { Employee, Taskfield } = require("../Models/userSchema");
 const { error } = require("console");
-const { storage } = require("../Cloudinary/Cloudinary");
+// const { storage } = require("../Cloudinary/Cloudinary");
 
 // const storage = multer.diskStorage({
 //   destination: (req, file, cb) => {
@@ -15,7 +15,7 @@ const { storage } = require("../Cloudinary/Cloudinary");
 //   },
 // });
 
-const uploads = multer({ storage });
+// const uploads = multer({ storage });
 
 router.post("/", uploads.single("image"), async (req, res) => {
   const {
