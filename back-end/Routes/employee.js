@@ -17,7 +17,7 @@ const { error } = require("console");
 
 // const uploads = multer({ storage });
 
-router.post("/", uploads.single("image"), async (req, res) => {
+router.post("/", async (req, res) => {
   const {
     name,
     password,
