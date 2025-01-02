@@ -40,7 +40,7 @@ router.get("/all", async (req, res) => {
     res.send(allemployee);
 });
 
-// const uploads = multer({ storage });
+const uploads = multer({ storage });
 router.post("/login", async (req, res) => {
     const { name, password } = req.body;
     try {
