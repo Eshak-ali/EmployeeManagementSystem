@@ -63,7 +63,7 @@ const Register = () => {
                 console.log("regsiter not successfull");
             }
         } catch (error) {
-            console.log(error.message);
+            alert(error.message);
         }
     };
 
