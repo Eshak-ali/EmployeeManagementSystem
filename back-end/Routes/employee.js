@@ -4,15 +4,16 @@ const path = require("path");
 const router = express.Router();
 const { Employee, Taskfield } = require("../Models/userSchema");
 const { error } = require("console");
+const { storage } = require("../Cloudinary/Cloudinary");
 
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, "tmp/");
-  },
-  filename: (req, file, cb) => {
-    cb(null, Date.now() + path.extname(file.originalname));
-  },
-});
+// const storage = multer.diskStorage({
+//   destination: (req, file, cb) => {
+//     cb(null, "tmp/");
+//   },
+//   filename: (req, file, cb) => {
+//     cb(null, Date.now() + path.extname(file.originalname));
+//   },
+// });
 
 const uploads = multer({ storage });
 
@@ -45,7 +46,7 @@ router.post("/", uploads.single("image"), async (req, res) => {
       email: email,
       employeeid: employeeid,
       position: position,
-      image: req?.file?.filename || 'image',
+      image: req?.file?.filename || "image",
       leave,
       days,
       Rating: Rating,
@@ -85,7 +86,7 @@ router.post("/position", async (req, res) => {
     position,
     salary,
   });
-  if (positionupdate){
+  if (positionupdate) {
     res.send(positionupdate);
   } else {
     res.status(400).json({ message: "position error" });
