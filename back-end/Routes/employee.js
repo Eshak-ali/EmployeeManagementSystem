@@ -7,7 +7,7 @@ const { error } = require("console");
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "uploads/" || "/tmp");
+    cb(null, "tmp/");
   },
   filename: (req, file, cb) => {
     cb(null, Date.now() + path.extname(file.originalname));
@@ -32,9 +32,9 @@ router.post("/", uploads.single("image"), async (req, res) => {
     salary,
     cashier,
   } = req.body;
-  // if (!req.file) {
-  //   return res.status(400).json({ message: "no file uploaded" });
-  // }
+  if (!req.file) {
+    return res.status(400).json({ message: "no file uploaded" });
+  }
 
   try {
     const empdetails = new Employee({
@@ -85,7 +85,7 @@ router.post("/position", async (req, res) => {
     position,
     salary,
   });
-  if (positionupdate) {
+  if (positionupdate){
     res.send(positionupdate);
   } else {
     res.status(400).json({ message: "position error" });
