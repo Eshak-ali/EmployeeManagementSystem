@@ -186,7 +186,7 @@ const Navbar = () => {
                   <img
                     className="profile-img"
                     src={
-                      `${process.env.REACT_APP_API}/uploads/${person.image}` ||
+                      `${person.image}` ||
                       user
                     }
                     alt="name"
