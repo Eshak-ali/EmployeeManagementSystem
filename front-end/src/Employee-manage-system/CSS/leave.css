@@ -21,12 +21,12 @@
     border: 1px solid black;
     border-radius: 10px;
     background-color:  rgb(70, 0, 70);
-    box-shadow: 0px 10px 20px black;
+    box-shadow:inset 0px 10px 20px black;
 }
 .leave-input textarea{
     width: 80%;
     height: 20vh;
-    box-shadow: inset 0px 10px 15px black;
+    box-shadow:  0px 10px 15px black;
     border-radius: 10px;
     border: 1px solid rgb(70, 0, 70);
 }
