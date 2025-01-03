@@ -36,7 +36,7 @@ const Adminsalary = () => {
                 <div className="profile-emp d-flex ">
                     <span>
                         <img
-                            src={`${process.env.REACT_APP_API}/uploads/${row.image}`}
+                            src={`${row.image}`}
                             alt="name"
                         />
                     </span>
