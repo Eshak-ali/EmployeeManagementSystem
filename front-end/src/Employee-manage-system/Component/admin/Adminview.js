@@ -158,7 +158,7 @@ const Adminview = () => {
                 <p className="dropdown-item profile-emp d-flex align-items-center justify-content-around">
                   {" "}
                   <img
-                    src={`${process.env.REACT_APP_API}/uploads/${item.image}`}
+                    src={`${item.image}`}
                     alt="name"
                   />
                   <>{item.name}</>
@@ -184,7 +184,7 @@ const Adminview = () => {
               (item) => (
                 <div className="d-flex align-items-center justify-content-start profile-emp gap-2">
                   <img
-                    src={`${process.env.REACT_APP_API}/uploads/${item.image}`}
+                    src={`${item.image}`}
                     alt="name"
                   />
                   <h4 className="text-danger">{item.name}</h4>
