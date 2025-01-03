@@ -35,7 +35,7 @@ const AdminNavbar = () => {
           <section className="admin-details">
             <img
               className="profile-img"
-              src={`${process.env.REACT_APP_API}/uploads/${person?.image}`}
+              src={`${person?.image}`}
               alt="image"
             />
             <h3>{person?.name}</h3>
