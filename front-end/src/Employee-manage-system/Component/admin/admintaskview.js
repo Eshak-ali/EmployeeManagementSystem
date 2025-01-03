@@ -62,7 +62,7 @@ const Admintaskview = () => {
                 <div>
                   <h4 className="profile-emp text-dark ">
                     <img
-                      src={`${process.env.REACT_APP_API}/uploads/${context.assign.image}`}
+                      src={`${context.assign.image}`}
                       alt="name"
                     />
                     {context.assign.name}
