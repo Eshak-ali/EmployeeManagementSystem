@@ -28,7 +28,8 @@ const Navbar = () => {
     setTemp((prev) => ({ ...prev, [name]: value }));
   };
   const handleImage = (e) => {
-    setTemp((prev) => ({ ...prev, image: e.target.files[0] }));
+    const file=e.target.files[0];
+    setTemp((prev) => ({ ...prev, image: file}));
   };
 
   const updatestates = () => {
