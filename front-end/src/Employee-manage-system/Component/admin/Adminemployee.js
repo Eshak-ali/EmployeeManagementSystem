@@ -73,7 +73,7 @@ const Adminemployee = ({ setOption }) => {
         <div className="profile-emp d-flex">
           <span>
             <img
-              src={`${process.env.REACT_APP_API}/uploads/${row.image}`}
+              src={`${row.image}`}
               alt="name"
             />
           </span>
@@ -312,7 +312,7 @@ const Adminemployee = ({ setOption }) => {
                           <td className="profile-emp">
                             <span>
                               <img
-                                src={`${process.env.REACT_APP_API}/uploads/${each.image}`}
+                                src={`${each.image}`}
                               />
                               <p>{each.name}</p>
                             </span>
