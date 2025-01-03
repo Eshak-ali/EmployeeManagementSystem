@@ -22,7 +22,8 @@ const Register = () => {
     };
 
     const handleimage = (e) => {
-        setEmployee((prev) => ({ ...prev, image: e.target.files[0] }));
+        const file = e.target.files[0];
+        setEmployee((prev) => ({ ...prev, image:file}));
     };
 
     const handlesubmit = async (event) => {
