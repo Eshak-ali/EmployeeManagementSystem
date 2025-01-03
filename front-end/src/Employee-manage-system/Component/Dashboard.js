@@ -103,7 +103,7 @@ const Dashboard = () => {
                     <div className="col-3 user-box d-none d-md-flex ">
                         <img
                             className="h-50 rounded"
-                            src={`${process.env.REACT_APP_API}/uploads/${person.image}`}
+                            src={`${person.image}`}
                             alt="user.name"
                         />
                         <div>
@@ -209,7 +209,7 @@ const Dashboard = () => {
                                             {Math.round(
                                                 (person.salary / 26) *
                                                     days.leaveday
-                                            )}
+                                            ) || 0}
                                         </p>
                                     </div>
                                 </div>
@@ -222,7 +222,7 @@ const Dashboard = () => {
                                                 person?.salary -
                                                     (person?.salary / 26) *
                                                         days.leaveday
-                                            ) - (person?.cashier?.short || 0)}
+                                            ) - (person?.cashier?.short || 0) || 0}
                                         </p>
                                     </div>
                                 </div>
