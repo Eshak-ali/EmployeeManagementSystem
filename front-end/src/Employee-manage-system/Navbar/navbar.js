@@ -239,7 +239,7 @@ const Navbar = () => {
                 <img
                   className="profile-img"
                   src={
-                    `${process.env.REACT_APP_API}/uploads/${person.image}` ||
+                    `${person.image}` ||
                     user
                   }
                   alt="name"
@@ -316,13 +316,13 @@ const Navbar = () => {
               <div class="modal-form">
                 <div class="form-box">
                   <form class="update-box">
-                    <label>Name </label>
+                   {check === "employee" ? <>  <label>Name </label>
                     <input
                       type="text"
                       name="name"
                       value={temp.name}
                       onChange={handlechange}
-                    />
+                    /> </> : "" }
                     <label>Age </label>
                     <input
                       type="number"
@@ -330,13 +330,13 @@ const Navbar = () => {
                       value={temp.age}
                       onChange={handlechange}
                     />
-                    <label>Password </label>
+                   {check === "employee" ? <><label>Password </label>
                     <input
                       type="password"
                       name="password"
                       value={temp.password}
                       onChange={handlechange}
-                    />
+                    /></> : ""}
                     <label>Phone </label>
                     <input
                       type="number"
@@ -357,8 +357,7 @@ const Navbar = () => {
                       className="file-input"
                       accept="image/*"
                       onChange={handleImage}
-                      disabled
-                    />
+                                          />
                   </form>
                 </div>
               </div>
