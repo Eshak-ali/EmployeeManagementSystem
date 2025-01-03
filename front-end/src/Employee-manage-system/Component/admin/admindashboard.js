@@ -31,7 +31,8 @@ const Admindashboard = () => {
     setTemp((prev) => ({ ...prev, [name]: value }));
   };
   const handleImage = (e) => {
-    setTemp((prev) => ({ ...prev, image: e.target.files[0] }));
+    const file=e.target.files[0]
+    setTemp((prev) => ({ ...prev, image: file }));
   };
 
   const update = async (temp) => {
@@ -182,7 +183,7 @@ const Admindashboard = () => {
                       <td className="profile-emp">
                         <span>
                           <img
-                            src={`${process.env.REACT_APP_API}/uploads/${each.image}`}
+                            src={`${each.image}`}
                           />
                           <p>{each.name}</p>
                         </span>
@@ -255,7 +256,7 @@ const Admindashboard = () => {
                         <td className="profile-emp">
                           <span>
                             <img
-                              src={`${process.env.REACT_APP_API}/uploads/${each.image}`}
+                              src={`${each.image}`}
                             />
                             <p>{each.name}</p>
                           </span>
