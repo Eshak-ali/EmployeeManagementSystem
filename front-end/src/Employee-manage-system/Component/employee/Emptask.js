@@ -146,14 +146,14 @@ const Emptask = () => {
           <div className="profile-cart col-8 mt-5">
             <div className="task-img d-none d-md-flex">
               <img
-                src={`${process.env.REACT_APP_API}/uploads/${person.image}`}
+                src={`${person.image}`}
                 alt="name"
               />
             </div>
 
             <div className="task-img1  d-block d-md-none">
               <img
-                src={`${process.env.REACT_APP_API}/uploads/${person.image}`}
+                src={`${person.image}`}
                 alt="name"
               />
             </div>
