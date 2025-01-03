@@ -86,3 +86,13 @@
 .task-table{
     height: 40vh;
 }
+
+@media (max-width: 768) {
+ .form-details>input{
+  width:20vw;
+}
+  
+.form-details>textarea{
+  width:20vw;
+}
+} 
