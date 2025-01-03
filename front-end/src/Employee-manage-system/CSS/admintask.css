@@ -87,7 +87,7 @@
     height: 40vh;
 }
 
-@media (max-width: 768) {
+@media (max-width: 768px) {
  .form-details>input{
   width:20vw;
 }
