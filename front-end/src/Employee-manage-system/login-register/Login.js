@@ -106,7 +106,7 @@ const Login = () => {
                 id="input"
                 className="input"
                 type="password"
-                name="password"
+                name="current_password"
                 onChange={handlechange}
               />
               <button
