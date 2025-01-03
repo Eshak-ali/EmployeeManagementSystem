@@ -37,6 +37,10 @@
     justify-content: space-evenly;
     gap: 100px;
 }
+
+.form-details input{
+  min-width:400px;
+}
 .task-main-view{
     display: flex;
     align-items: center;
