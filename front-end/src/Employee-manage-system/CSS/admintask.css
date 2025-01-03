@@ -38,9 +38,14 @@
     gap: 100px;
 }
 
-.form-details input{
-  min-width:400px;
+.form-details>input{
+  width:300px;
 }
+
+.form-details>textarea{
+  width:300px;
+}
+
 .task-main-view{
     display: flex;
     align-items: center;
