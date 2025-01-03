@@ -56,7 +56,7 @@ const Performance = () => {
                         </thead>
                         <tbody>
                             <tr>
-                                <td className='emp-img'><img src={`${process.env.REACT_APP_API}/uploads/${person.image}`} /></td>
+                                <td className='emp-img'><img src={`${person.image}`} /></td>
                                 <td>{person.name}</td>
                                 <td>{person.employeeid}</td>
                                 <td>{person.position}</td>
@@ -97,10 +97,10 @@ const Performance = () => {
                         </thead>
 
                         <tbody>
-                            {emp.filter((each) => ((each.name.toLowerCase()).includes(search.toLowerCase()))).map((each) => (
+                            {temp.filter((each) => ((each.name.toLowerCase()).includes(search.toLowerCase()))).map((each) => (
                                 <tr key={each._id}>
                                     <td className='emp-img'>
-                                        <img src={`${process.env.REACT_APP_API}/uploads/${each.image}`} /></td>
+                                        <img src={`${each.image}`} /></td>
                                     <td >{each.name}</td>
                                     <td>{each.employeeid}</td>
                                     <td>{each?.position}</td>
