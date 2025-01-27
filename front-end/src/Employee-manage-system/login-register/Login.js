@@ -83,8 +83,9 @@ const Login = () => {
   return (
     <div className="main-login col-12">
         <div>
-    <p>Name:Zarastore</p><br/>
-    <p>password:1511</p></div>
+    <p>Admin</p><br/>
+    <p>Zarastore</p><br/>
+    <p>1511</p></div>
       <div className="login-box col-10 col-md-8">
         <div className="user-login">
           <img src={user} alt="user" />
@@ -159,7 +160,7 @@ const Login = () => {
           </button>
         </form>
         <p>
-          Don't have an Account<Link to={"/register"}>Register</Link>
+         Employee Don't have an Account<Link to={"/register"}>pls Register first!</Link>
         </p>
       </div>
     </div>
