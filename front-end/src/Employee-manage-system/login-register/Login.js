@@ -83,8 +83,8 @@ const Login = () => {
   return (
     <div className="main-login col-12">
         <div>
-    <p>Admin</p><br/>
-    <p>Zarastore</p><br/>
+    <p>Admin: </p>
+    <p>Zarastore, </p>
     <p>1511</p></div>
       <div className="login-box col-10 col-md-8">
         <div className="user-login">
@@ -160,8 +160,8 @@ const Login = () => {
           </button>
         </form>
         <p>
-         Employee Don't have an Account<Link to={"/register"}>pls Register first!</Link>
-        </p>
+         Employee Don't have an Account pls<Link to={"/register"}> Register</Link>
+       first!  </p>
       </div>
     </div>
   );
